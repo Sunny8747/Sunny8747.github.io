@@ -3,10 +3,10 @@
   source0=layout.show_author_profile source1=page.show_author_profile -%}
 {%- assign _show_author_profile = __return -%}
 
-{%- include snippets/assign.html
+<!-- {%- include snippets/assign.html
   target=site.data.variables.default.page.show_subscribe
   source0=layout.show_subscribe source1=page.show_subscribe -%}
-{%- assign _show_subscribe = __return -%}
+{%- assign _show_subscribe = __return -%} -->
 
 {%- include snippets/assign.html
   target=site.data.variables.default.page.license
@@ -38,9 +38,9 @@
     {%- include article/footer/author-profile.html author=_author -%}
   {%- endif -%}
 
-  {%- if _show_subscribe -%}
+  <!-- {%- if _show_subscribe -%}
     <div class="article__subscribe">{%- include article/footer/subscribe.html -%}</div>
-  {%- endif -%}
+  {%- endif -%} -->
 
   {%- if _license != false -%}
     {%- assign _data_license = site.data.licenses-%}
