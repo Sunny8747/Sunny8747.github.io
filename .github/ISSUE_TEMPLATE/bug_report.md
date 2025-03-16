@@ -1,37 +1,35 @@
 ---
 name: Bug report
-about: Report a bug you've encountered
-title: "[Bug]: Please add a title"
-labels: bug
+about: Create a report to help us improve
+title: 'Bug:'
+labels: ''
 assignees: ''
 
 ---
 
-## Summary
-A clear and concise description of what the bug is.
+<!-- Prefer English -->
 
-## To Reproduce
-Steps to reproduce the behaviour:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Description**
 
-## Expected behaviour
-A clear and concise description of what you expected to happen.
+[Description of the bug]
 
-## Screenshots
-If applicable, add screenshots to help explain your problem.
+**Steps to Reproduce**
 
-## Environment
-- Ruby version: [e.g. 2.7.0]
-- Jekyll version: [e.g. 4.1.0]
-- Theme version: [e.g. 4.1.0]
+1. [First Step]
+2. [Second Step]
+3. [and so on...]
 
-## Browser(s)
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Expected behavior**
 
-## Additional context
-Add any other context about the problem here.
+[What you expected to happen]
+
+**Screenshots (If Necessary)**
+
+[Screenshots to help explain your problem.]
+
+**Environment (If Necessary)**
+
+- OS: [e.g. Github Pages, Windows 10, macOS 10.13, Linux(CentOS 7.5), iOS 11, Android 8(Pixel 2)]
+- Ruby: [e.g. Github Pages, 2.4.0p0]
+- Jekyll: [e.g. Github Pages, 3.7.3]
+- Browser: [e.g. Chrome, Safari, Edge, Firefox]
