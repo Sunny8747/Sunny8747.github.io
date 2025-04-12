@@ -16,6 +16,8 @@ The main goal of the project is to port the existing codebase for as compatible 
 #### Why Go?
 [Anders Hejlsberg's comment](https://github.com/microsoft/typescript-go/discussions/411) : "The TypeScript compiler's move to Go was influenced by specific technical requirements, such as the need for structural compatibility with the existing JavaScript-based codebase, ease of memory management, and the ability to handle complex graph processing efficiently. After evaluating numerous languages and making multiple prototypes — including in C# — Go emerged as the optimal choice, providing excellent ergonomics for tree traversal, ease of memory allocation, and a code structure that closely mirrors the existing compiler, enabling easier maintenance and compatibility."
 
+![compare_go_typescript](/images/TypescriptPortedToGo/compare_go_typescript.png)
+
 Typescript requires automatic garbage collection and support for cyclic graphs, while avoiding incompatibilities and unpredictable behavior.
 Rust was not chosen due to its handling of cyclic data structures (like ASTs with child and parent pointers and recursive elements).
 Using Rust would require a complete rewrite rather than a straightforward port of these features.
@@ -32,6 +34,8 @@ The solution divides each source file in the project into quarters and runs four
 Each type checker processes the whole project but handles only its assigned quarter of files.
 While this approach may generate duplicate types, the performance trade-off is worth it. Anders Hejlsberg said “That’s a great bargain.”
 [TypeScript is being ported to Go | interview with Anders Hejlsberg - Michigan TypeScript](https://youtu.be/10qowKUW82U?si=QVk7RZA_XssoItNV&t=2522)
+
+![AST](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Abstract_syntax_tree_for_Euclidean_algorithm.svg/960px-Abstract_syntax_tree_for_Euclidean_algorithm.svg.png)
 
 #### Communication with Other Languages
 - Language-neutral binding (primarily using Language Server Protocol)
